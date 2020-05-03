@@ -61,6 +61,7 @@ The optimizer that we used is the Adam optimizer. This is an algorithm that can 
 The metrics used in assessing the model’s performance was binary accuracy and mean absolute error. Refer to their equations below.
 
 ![accuracy.png](/images/image3.gif)
+
 ![mae.png](/images/image2.gif)
 
 Binary accuracy refers to the ratio of correct predictions to the total number of predictions. The main drawback of using accuracy as a metric is that it is misleading at times. For instance, if a lung disease model that selects hernia 100% of the time is applied to predict a sample of say 90% Hernia patients and 10% of all other diseases, it will have a 90% accuracy even though we know the model can only predict 1 kind of disease and is highly limited. Thus, we also employed the Mean absolute error. MAE refers to the average magnitude of the difference between the original value and fitted value.
