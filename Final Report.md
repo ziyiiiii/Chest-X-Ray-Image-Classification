@@ -42,7 +42,7 @@ This is the formula for the binary cross-entropy:
 
 Note that P(y <sub>i</sub>) here refers to the probability of being the true class. Taking the negative log of P(y<sub>i</sub>) means that the close the value of P(y<sub>i</sub>) to 1 (i.e. the more likely an image is a particular disease in question), the smaller the value of negative log(P(y<sub>i</sub>)) (since the log of a value between 0 and 1 is negative and the negative of negative is positive), and thus resulting in a smaller loss (this loss being denoted by H in the equation). This corresponds to the graph below. This should be intuitive because the loss function is penalizing less (by holding a smaller value) when the image is more likely to be of the disease in question.
 
-![log_loss.png](attachment:log_loss.png)
+![log_loss.png](/images/image5.png)
 
 We did not use categorical cross-entropy because each image can be labelled with more than one disease. Categoricla cross-entropy is for mutually exclusives classes.
 
@@ -60,23 +60,22 @@ The optimizer that we used is the Adam optimizer. This is an algorithm that can 
 
 The metrics used in assessing the model’s performance was binary accuracy and mean absolute error. Refer to their equations below.
 
-![accuracy.png](attachment:accuracy.png)
-![mae.png](attachment:mae.png)
+![accuracy.png](/images/image3.png)
+![mae.png](/images/image2.png)
 
 Binary accuracy refers to the ratio of correct predictions to the total number of predictions. The main drawback of using accuracy as a metric is that it is misleading at times. For instance, if a lung disease model that selects hernia 100% of the time is applied to predict a sample of say 90% Hernia patients and 10% of all other diseases, it will have a 90% accuracy even though we know the model can only predict 1 kind of disease and is highly limited. Thus, we also employed the Mean absolute error. MAE refers to the average magnitude of the difference between the original value and fitted value.
 
 # Results
 
 ## ROC Curves for Various Subsets
-![final_fpa.png](attachment:final_fpa.png)
-![final_fap.png](attachment:final_fap.png)
-
-![final_mpa.png](attachment:final_mpa.png)
-![final_map.png](attachment:final_map.png)
+![final_fap.png](/images/image10.png)
+![final_fpa.png](/images/image9.png)
+![final_map.png](/images/image6.png)
+![final_mpa.png](/images/image4.png)
 
 ## Visualization of Results
-![diff_gender.png](attachment:diff_gender.png)
-![diff_position.png](attachment:diff_position.png)
+![diff_gender.png](/images/image1.png)
+![diff_position.png](/images/image8.png)
 
 ## Results & Discussion 
 
