@@ -38,7 +38,7 @@ The loss function used in this model is the binary cross-entropy function.
 
 This is the formula for the binary cross-entropy:
 
-![binary_entropy.png](attachment:binary_entropy.png)
+![binary_entropy.png](/images/image7.png)
 
 Note that P(y <sub>i</sub>) here refers to the probability of being the true class. Taking the negative log of P(y<sub>i</sub>) means that the close the value of P(y<sub>i</sub>) to 1 (i.e. the more likely an image is a particular disease in question), the smaller the value of negative log(P(y<sub>i</sub>)) (since the log of a value between 0 and 1 is negative and the negative of negative is positive), and thus resulting in a smaller loss (this loss being denoted by H in the equation). This corresponds to the graph below. This should be intuitive because the loss function is penalizing less (by holding a smaller value) when the image is more likely to be of the disease in question.
 
